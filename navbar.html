@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mega Dropdown Navbar</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    /* Custom CSS for the mega dropdown */
+    .mega-dropdown {
+      position: static;
+    }
+
+    .mega-dropdown-menu {
+      width: 100%;
+      padding: 20px;
+      column-count: 3; /* You can adjust the number of columns as needed */
+      column-gap: 2rem;
+    }
+
+    .mega-dropdown-menu a {
+      display: block;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Mega Dropdown</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item dropdown mega-dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="megaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu</a>
+        <div class="dropdown-menu mega-dropdown-menu" aria-labelledby="megaDropdown">
+          <!-- Mega dropdown content -->
+          <div class="column">
+            <a class="dropdown-item" href="#">Submenu Item 1</a>
+            <a class="dropdown-item" href="#">Submenu Item 2</a>
+            <a class="dropdown-item" href="#">Submenu Item 3</a>
+          </div>
+          <div class="column">
+            <a class="dropdown-item" href="#">Submenu Item 4</a>
+            <a class="dropdown-item" href="#">Submenu Item 5</a>
+            <a class="dropdown-item" href="#">Submenu Item 6</a>
+          </div>
+          <div class="column">
+            <a class="dropdown-item" href="#">Submenu Item 7</a>
+            <a class="dropdown-item" href="#">Submenu Item 8</a>
+            <a class="dropdown-item" href="#">Submenu Item 9</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
